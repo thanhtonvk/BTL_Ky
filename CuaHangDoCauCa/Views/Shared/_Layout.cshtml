@@ -16,12 +16,37 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Cửa hàng đồ câu cá", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
                     <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white active bg-gradient-primary" href="@Url.Action("Index","SanPhams")">
+                            
+                            <span class="nav-link-text ms-1">Quản lý sản phẩm</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="@Url.Action("Index","Hangs")">
+                           
+                            <span class="nav-link-text ms-1">Quản lý hãng sản xuất</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="@Url.Action("Index","TaiKhoans")">
+                           
+                            <span class="nav-link-text ms-1">Quản lý tài khoản</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white " href="@Url.Action("Index","HoaDons")">
+                            
+                            <span class="nav-link-text ms-1">Đơn hàng</span>
+                        </a>
+                    </li>
+
                 </ul>
             </div>
         </div>
