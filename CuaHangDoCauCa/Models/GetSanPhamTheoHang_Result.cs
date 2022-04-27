@@ -13,6 +13,7 @@ namespace CuaHangDoCauCa.Models
     
     public partial class GetSanPhamTheoHang_Result
     {
+
         public int MaSP { get; set; }
         public string TenSP { get; set; }
         public int SoLuong { get; set; }

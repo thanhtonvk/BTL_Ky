@@ -11,13 +11,19 @@ namespace CuaHangDoCauCa.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel;
+
     public partial class HoaDon
     {
+        [DisplayName("Mã hóa don")]
         public int MaHD { get; set; }
+        [DisplayName("Tên tài kho?n")]
         public string TenTK { get; set; }
+        [DisplayName("Ngày bán")]
         public string NgayBan { get; set; }
+        [DisplayName("Ð?a ch?")]
         public string DiaChi { get; set; }
+        [DisplayName("SÐT")]
         public string SDT { get; set; }
         public Nullable<int> TrangThai { get; set; }
     }
